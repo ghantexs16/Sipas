@@ -115,7 +115,7 @@
                             <?php $no=0; foreach($anggota as $row): $no++;?>
                             <tr>
                                 <td><?php echo $no;?></td>
-                                <td><img src="<?php echo base_url('assets/img/anggota/'.$row->image);?>" width="100px" height="100px"></td>
+                                <td><img src="<?php echo base_url('assets/img/'.$row->image);?>" width="100px" height="100px"></td>
                                 <td><?php echo $row->nis;?></td>
                                 <td><?php echo $row->nama;?></td>
                                 <td><?php echo $row->ttl;?></td>
