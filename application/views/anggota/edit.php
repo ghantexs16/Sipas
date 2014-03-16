@@ -41,7 +41,7 @@
     <div class="form-group">
         <label class="col-lg-2 control-label">Image</label>
         <div class="col-lg-5">
-            <img src="<?php echo base_url('assets/img/anggota/'.$anggota['image']);?>" width="200px" height="200px">
+            <img src="<?php echo base_url('assets/img/'.$anggota['image']);?>" width="200px" height="200px">
         </div>
     </div>
     
