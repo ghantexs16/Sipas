@@ -45,7 +45,7 @@ class Anggota extends CI_Controller{
         if($this->form_validation->run()==true){
             $nis=$this->input->post('nis');
             //setting konfiguras upload image
-            $config['upload_path'] = './assets/img/anggota/';
+            $config['upload_path'] = './assets/img/';
 	    $config['allowed_types'] = 'gif|jpg|png';
 	    $config['max_size']	= '1000';
 	    $config['max_width']  = '2000';
@@ -93,7 +93,7 @@ class Anggota extends CI_Controller{
                 $this->template->display('anggota/tambah',$data);
             }else{
                 //setting konfiguras upload image
-                $config['upload_path'] = './assets/img/anggota/';
+                $config['upload_path'] = './assets/img/';
 		$config['allowed_types'] = 'gif|jpg|png';
 		$config['max_size']	= '1000';
 		$config['max_width']  = '2000';
