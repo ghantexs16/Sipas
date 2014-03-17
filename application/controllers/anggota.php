@@ -128,7 +128,7 @@ class Anggota extends CI_Controller{
         $kode=$this->input->post('kode');
         $detail=$this->m_anggota->cek($kode)->result();
 	foreach($detail as $det):
-	    unlink("assets/img/anggota/".$det->image);
+	    unlink("assets/img/".$det->image);
 	endforeach;
         $this->m_anggota->hapus($kode);
     }
